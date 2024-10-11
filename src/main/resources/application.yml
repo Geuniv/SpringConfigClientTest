@@ -1,1 +1,7 @@
-spring.application.name=SpringConfigClientTest
+spring:
+  config:
+    import: "optional:configserver:http://localhost:8888/"
+  cloud:
+    config:
+      name: myproject
+      profile: dev
